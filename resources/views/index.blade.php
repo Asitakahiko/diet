@@ -11,6 +11,7 @@
         <div class='posts'>
             @foreach ($posts as $post)
                 <div class='post'>
+                    <h3><a href="/posts/{{ $post->id }}">{{ $post->title }}</a>
                     <h2 class='title'>{{ $post->title }}</h2>
                     <p class='body'>{{ $post->body }}</p>
                 </div>

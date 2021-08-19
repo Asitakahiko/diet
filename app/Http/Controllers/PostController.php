@@ -46,4 +46,11 @@ class PostController extends Controller
     $post->delete();
     return redirect('/posts');
     }
+    
+    protected function authenticated(Request $request, $user)
+    {
+    return response([
+        //
+    ]);
+    }
 }
